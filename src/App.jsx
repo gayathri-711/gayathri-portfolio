@@ -1191,7 +1191,7 @@ function App() {
 
 
             <a
-              href="https://www.linkedin.com/in/gayathri-dhanasekaran-17518a32"
+              href="https://www.linkedin.com/in/gayathri-dhanasekaran-17518a32a"
               target="_blank"
               rel="noreferrer"
               className="rounded-full border border-[#1e3a5f] bg-[#0d1b2a] px-7 py-3 text-slate-300 transition hover:border-cyan-400/40 hover:text-cyan-300"
