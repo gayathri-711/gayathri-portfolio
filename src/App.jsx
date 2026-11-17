@@ -463,7 +463,7 @@ function App() {
           </h2>
 
           <div className="mt-10 grid gap-10 md:grid-cols-12 items-start">
-            
+
             {/* Story & Biography (Col 7) */}
             <div className="md:col-span-7 space-y-6">
               <p className="text-lg leading-relaxed text-slate-600">
@@ -668,11 +668,10 @@ function App() {
                 <button
                   key={category}
                   onClick={() => setActiveFilter(category)}
-                  className={`rounded-full px-4 py-2 text-xs font-semibold transition cursor-pointer ${
-                    activeFilter === category
-                      ? "bg-emerald-600 text-white shadow-sm"
-                      : "border border-emerald-200 bg-white text-slate-600 hover:border-emerald-400 hover:text-emerald-700"
-                  }`}
+                  className={`rounded-full px-4 py-2 text-xs font-semibold transition cursor-pointer ${activeFilter === category
+                    ? "bg-emerald-600 text-white shadow-sm"
+                    : "border border-emerald-200 bg-white text-slate-600 hover:border-emerald-400 hover:text-emerald-700"
+                    }`}
                 >
                   {category}
                 </button>
