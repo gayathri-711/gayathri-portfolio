@@ -6,8 +6,9 @@ html {
 
 body {
   margin: 0;
-  background: #08111f;
-  color: #f8fafc;
+  background: linear-gradient(135deg, #e8f5e9 0%, #f4fbf7 50%, #ffffff 100%);
+  background-attachment: fixed;
+  color: #1e293b;
   font-family: Arial, sans-serif;
 }
 
@@ -16,8 +17,8 @@ body {
 }
 
 ::selection {
-  background: #38bdf8;
-  color: #08111f;
+  background: #10b981;
+  color: #ffffff;
 }
 
 /* Scrollbar */
@@ -27,14 +28,14 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #08111f;
+  background: #f0fdf4;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1e3a5f;
+  background: #a7f3d0;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #38bdf8;
+  background: #34d399;
 }
