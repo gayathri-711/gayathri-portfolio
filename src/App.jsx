@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {
   Mail,
+  ExternalLink,
   Download,
   ArrowRight,
   Award,
@@ -48,6 +49,140 @@ function App() {
   const projects = [
     {
       number: "01",
+      category: "SMART AGRI & CLIMATE TECH",
+      filterCategory: "Full Stack",
+      title: "Earthora — Smart Agriculture Ecosystem",
+      description:
+        "An intelligent regenerative agriculture and precision IoT telemetry ecosystem featuring living soil metrics, biological crop phenology, an agrochemical marketplace, and a 24/7 AI agronomy copilot.",
+      technologies: [
+        "React 18",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Tailwind CSS",
+        "Recharts",
+        "Lucide React",
+        "Vite",
+      ],
+      github: "https://github.com/gayathri-711/Earthora",
+      liveUrl: "https://earthora-5yk8-b85xd9iux-gayathri-711s-projects.vercel.app",
+      label: "Live on Vercel",
+      image: "/projects/earthora.jpg",
+      highlights: [
+        "Real-time rhizosphere telemetry: N-P-K macronutrients, pH balance, organic carbon %, and 5-stage crop phenology",
+        "Integrated Agricultural Marketplace (₹ INR) with OMRI/USDA certification filters and cold-chain tracking",
+        "24/7 AI Doubt-Clearing Agronomy Copilot and role-based portals for Farmers, Experts, and Admins",
+      ],
+    },
+    {
+      number: "02",
+      category: "HEALTHCARE MANAGEMENT SYSTEM",
+      filterCategory: "Full Stack",
+      title: "Dentia — Dental Clinic & Patient Portal",
+      description:
+        "A full-stack, enterprise-grade dental clinic operations platform combining a mobile-responsive patient booking portal with real-time schedule concurrency control and clinical doctor workstations.",
+      technologies: [
+        "Node.js",
+        "SQLite3",
+        "Bootstrap 5",
+        "JavaScript ES6+",
+        "Google Apps Script",
+        "Nodemailer",
+        "Twilio",
+        "Vercel Edge",
+      ],
+      github: "https://github.com/gayathri-711/DENTIA-CLINIC",
+      liveUrl: "https://dentia-clinic-l9z0y18d0-gayathri-711s-projects.vercel.app",
+      label: "Live on Vercel",
+      image: "/projects/dentia-clinic.jpg",
+      highlights: [
+        "Dynamic real-time slot scheduling with duplicate booking prevention and smart alternative recommender",
+        "3 dedicated portals: Patient self-service, Doctor clinical workstation, and Chief Medical Admin center",
+        "Automated Google Apps Script transactional email microservice with OTP verification and SMS alerts",
+      ],
+    },
+    {
+      number: "03",
+      category: "TRAVEL TECH & JOURNEY PLANNER",
+      filterCategory: "Full Stack",
+      title: "Roavio — Smart India Journey Planner",
+      description:
+        "A modern multi-modal travel discovery and itinerary planning platform across 175+ Indian destinations with multi-channel automated ticket delivery via PDF, WhatsApp, SMS, and email.",
+      technologies: [
+        "React 18",
+        "Node.js",
+        "Express.js",
+        "Framer Motion",
+        "Tailwind CSS",
+        "Resend API",
+        "Meta WhatsApp API",
+        "MSG91",
+      ],
+      github: "https://github.com/gayathri-711/Roavio",
+      liveUrl: "https://roavio-qxu208urs-gayathri-711s-projects.vercel.app",
+      label: "Live on Vercel",
+      image: "/projects/roavio.jpg",
+      highlights: [
+        "Interactive itinerary planner across 175+ destinations in all 36 Indian States and Union Territories",
+        "Multi-channel instant ticket dispatch: ISO-compliant %PDF-1.4 vector e-tickets with QR codes via WhatsApp, Email, & SMS",
+        "Simulated multi-modal transport reservations (Flights, IRCTC Vande Bharat, and Luxury Sleeper Buses)",
+      ],
+    },
+    {
+      number: "04",
+      category: "LUXURY E-COMMERCE PLATFORM",
+      filterCategory: "Full Stack",
+      title: "Woodora — Architectural Furniture Atelier",
+      description:
+        "A 33-page bespoke luxury furniture e-commerce experience powered by native SQLite with WAL mode, PBKDF2 cryptographic authentication, and synchronized cart/checkout engine.",
+      technologies: [
+        "Node.js",
+        "SQLite (node:sqlite)",
+        "JavaScript ES6+",
+        "Bootstrap 4.6",
+        "PBKDF2 Crypto",
+        "RESTful API",
+        "Vercel Edge",
+      ],
+      github: "https://github.com/gayathri-711/Woodora",
+      liveUrl: "https://woodora-contrive-593pj0xer-gayathri-711s-projects.vercel.app",
+      label: "Live on Vercel",
+      image: "/projects/woodora.jpg",
+      highlights: [
+        "Interactive product customizer: live timber/fabric finish swatches, dynamic sectional sizing, and real-time price recalculation",
+        "17-table relational SQLite schema with server-side tax, white-glove delivery logic, and coupon voucher engine",
+        "Executive administrative operations suite: catalog management, inventory control, and live order fulfillment pipeline",
+      ],
+    },
+    {
+      number: "05",
+      category: "ENTERPRISE CLIENT PORTAL & CMS",
+      filterCategory: "Full Stack",
+      title: "Orixo — Digital Agency & Client Portal",
+      description:
+        "An enterprise digital agency platform and client portal built with clean PHP 8.3 MVC architecture, MySQL, and Docker, featuring RBAC, Dompdf invoice generation, and lead inquiry conversion.",
+      technologies: [
+        "PHP 8.3",
+        "MySQL 8.0",
+        "Apache",
+        "Docker",
+        "Railway",
+        "Dompdf",
+        "PHPMailer",
+        "Bootstrap 5.3",
+      ],
+      github: "https://github.com/gayathri-711/Orizo",
+      liveUrl: "https://orizo-production.up.railway.app",
+      label: "Live on Railway",
+      image: "/projects/orixo.jpg",
+      highlights: [
+        "3 strictly isolated RBAC roles (Admin, Team Member, Client) with invitation-only expiring token onboarding",
+        "Private Client Portal with project milestone tracking, deliverables review, and automated INR (₹) Dompdf invoices",
+        "One-click inquiry conversion pipeline turning incoming client leads into active managed projects",
+      ],
+    },
+    {
+      number: "06",
       category: "QUANTUM MACHINE LEARNING",
       filterCategory: "Quantum & AI",
       title: "Noise-Aware Feature Selection for QCNN",
@@ -64,7 +199,7 @@ function App() {
       ],
     },
     {
-      number: "02",
+      number: "07",
       category: "FULL STACK DEVELOPMENT",
       filterCategory: "Full Stack",
       title: "Enterprise Learning Platform",
@@ -87,7 +222,7 @@ function App() {
       ],
     },
     {
-      number: "03",
+      number: "08",
       category: "FULL STACK DEVELOPMENT",
       filterCategory: "Full Stack",
       title: "AI Job Management Portal",
@@ -109,7 +244,7 @@ function App() {
       ],
     },
     {
-      number: "04",
+      number: "09",
       category: "MACHINE LEARNING",
       filterCategory: "Quantum & AI",
       title: "Intelligent Risk Assessment Model",
@@ -130,7 +265,7 @@ function App() {
       ],
     },
     {
-      number: "05",
+      number: "10",
       category: "IEEE CONFERENCE",
       filterCategory: "Research",
       title: "Risk Analysis in Chemical Industries",
@@ -743,17 +878,31 @@ function App() {
                 </div>
 
                 {/* Card Footer Actions */}
-                <div className="px-7 pb-6 pt-2 flex items-center justify-between border-t border-slate-100">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-50/80 px-4 py-2 text-xs font-bold text-emerald-700 transition hover:bg-emerald-600 hover:text-white"
-                  >
-                    <GithubIcon className="h-3.5 w-3.5" />
-                    <span>View GitHub</span>
-                    <ArrowRight className="h-3 w-3" />
-                  </a>
+                <div className="px-7 pb-6 pt-3 flex flex-wrap items-center justify-between gap-3 border-t border-slate-100">
+                  <div className="flex flex-wrap items-center gap-2">
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1.5 rounded-full bg-emerald-600 px-3.5 py-1.5 text-xs font-bold text-white shadow-xs transition hover:bg-emerald-500 hover:-translate-y-0.5"
+                      >
+                        <ExternalLink className="h-3.5 w-3.5" />
+                        <span>Live Demo</span>
+                      </a>
+                    )}
+
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-50/80 px-3.5 py-1.5 text-xs font-bold text-emerald-700 transition hover:bg-emerald-600 hover:text-white"
+                    >
+                      <GithubIcon className="h-3.5 w-3.5" />
+                      <span>View GitHub</span>
+                      <ArrowRight className="h-3 w-3" />
+                    </a>
+                  </div>
 
                   <span className="rounded-full bg-teal-50 px-3.5 py-1 text-xs font-bold text-teal-700 border border-teal-100">
                     {project.label}
