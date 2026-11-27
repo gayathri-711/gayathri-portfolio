@@ -245,27 +245,6 @@ function App() {
     },
     {
       number: "09",
-      category: "MACHINE LEARNING",
-      filterCategory: "Quantum & AI",
-      title: "Intelligent Risk Assessment Model",
-      description:
-        "Research focused on intelligent risk assessment and accident prevention in hazardous industries using machine learning techniques. (Scopus Indexed Publication)",
-      technologies: [
-        "Python",
-        "Machine Learning",
-        "Data Analysis",
-      ],
-      github: "https://github.com/gayathri-711",
-      label: "Scopus Publication",
-      image: "/projects/risk-assessment.jpg",
-      highlights: [
-        "Predictive hazard classification and failure mode early warning",
-        "Time-series sensor telemetry anomaly detection algorithms",
-        "Published in Scopus-indexed research proceedings (2026)",
-      ],
-    },
-    {
-      number: "10",
       category: "IEEE CONFERENCE",
       filterCategory: "Research",
       title: "Risk Analysis in Chemical Industries",
@@ -815,7 +794,7 @@ function App() {
           </div>
 
           {/* Project Cards Grid */}
-          <div className="mt-12 grid gap-8 md:grid-cols-2">
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {filteredProjects.map((project) => (
               <article
                 key={project.title}
@@ -842,18 +821,18 @@ function App() {
                   </div>
 
                   {/* Project Content */}
-                  <div className="p-7">
-                    <h3 className="text-2xl font-bold text-slate-900 group-hover:text-emerald-700 transition">
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-slate-900 group-hover:text-emerald-700 transition">
                       {project.title}
                     </h3>
 
-                    <p className="mt-3 leading-relaxed text-slate-600 text-sm">
+                    <p className="mt-2.5 leading-relaxed text-slate-600 text-sm">
                       {project.description}
                     </p>
 
                     {/* Highlights bullet points */}
                     {project.highlights && (
-                      <div className="mt-4 space-y-2">
+                      <div className="mt-3.5 space-y-1.5">
                         {project.highlights.map((highlight, idx) => (
                           <div key={idx} className="flex items-start gap-2 text-xs font-medium text-slate-600">
                             <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -864,7 +843,7 @@ function App() {
                     )}
 
                     {/* Technology Pills */}
-                    <div className="mt-5 flex flex-wrap gap-1.5">
+                    <div className="mt-4 flex flex-wrap gap-1.5">
                       {project.technologies.map((technology) => (
                         <span
                           key={technology}
@@ -878,14 +857,14 @@ function App() {
                 </div>
 
                 {/* Card Footer Actions */}
-                <div className="px-7 pb-6 pt-3 flex flex-wrap items-center justify-between gap-3 border-t border-slate-100">
+                <div className="px-6 pb-5 pt-3 flex flex-wrap items-center justify-between gap-2.5 border-t border-slate-100">
                   <div className="flex flex-wrap items-center gap-2">
                     {project.liveUrl && (
                       <a
                         href={project.liveUrl}
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-flex items-center gap-1.5 rounded-full bg-emerald-600 px-3.5 py-1.5 text-xs font-bold text-white shadow-xs transition hover:bg-emerald-500 hover:-translate-y-0.5"
+                        className="inline-flex items-center gap-1.5 rounded-full bg-emerald-600 px-3 py-1.5 text-xs font-bold text-white shadow-xs transition hover:bg-emerald-500 hover:-translate-y-0.5"
                       >
                         <ExternalLink className="h-3.5 w-3.5" />
                         <span>Live Demo</span>
@@ -896,7 +875,7 @@ function App() {
                       href={project.github}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-50/80 px-3.5 py-1.5 text-xs font-bold text-emerald-700 transition hover:bg-emerald-600 hover:text-white"
+                      className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-50/80 px-3 py-1.5 text-xs font-bold text-emerald-700 transition hover:bg-emerald-600 hover:text-white"
                     >
                       <GithubIcon className="h-3.5 w-3.5" />
                       <span>View GitHub</span>
@@ -904,7 +883,7 @@ function App() {
                     </a>
                   </div>
 
-                  <span className="rounded-full bg-teal-50 px-3.5 py-1 text-xs font-bold text-teal-700 border border-teal-100">
+                  <span className="rounded-full bg-teal-50 px-2.5 py-1 text-xs font-bold text-teal-700 border border-teal-100">
                     {project.label}
                   </span>
                 </div>
